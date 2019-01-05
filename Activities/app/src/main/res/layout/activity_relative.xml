@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color1"
+    android:layout_height="match_parent"
+    tools:context=".Relative">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/color2"
+        android:text="Ingresar datos" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:id="@+id/et1"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_et"
+        android:hint="Nombre"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="140dp"
+        android:id="@+id/et2"
+        android:background="@drawable/bg_et"
+        android:hint="Apelido p"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/et1"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="140dp"
+        android:id="@+id/et3"
+        android:background="@drawable/bg_et"
+        android:hint="Apelido m"
+        android:layout_below="@+id/et1"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/et2"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:id="@+id/spin"
+        android:layout_below="@+id/et2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"></Spinner>
+
+    <EditText
+        android:layout_width="300dp"
+        android:background="@drawable/bg_et"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spin"
+        android:paddingLeft="10dp"
+        android:hint="Número de cuenta"
+        android:inputType="number"
+        android:id="@+id/et4"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btn3"
+        android:layout_below="@+id/et4"
+        android:text="Ir a tablelayout"
+        android:textSize="18sp"
+        android:textColor="@color/color1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_bt_iniciar_2"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btn5"
+        android:layout_below="@+id/btn3"
+        android:text="Regresar"
+        android:textSize="18sp"
+        android:textColor="@color/color1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_bt_iniciar_2"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+</RelativeLayout>
